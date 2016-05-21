@@ -5,8 +5,10 @@
 
 * 1 build the fake log files:
 
-<pre>$ cd ~/exampleA</pre>
-<pre>$ gradle makeData</pre>
+<pre>
+$ cd ~/exampleA
+$ gradle makeData
+</pre>
 
 * 2 run example (each one follows this pattern):
 
