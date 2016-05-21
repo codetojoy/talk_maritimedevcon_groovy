@@ -3,14 +3,14 @@
 
 * See ReadMe.txt in root directory for installation notes for Groovy and Gradle
 
-* step 1: build the fake log files:
+* Step 1. build the fake log files:
 
 <pre>
 $ cd ~/exampleA
 $ gradle makeData
 </pre>
 
-* step 2: run example (each one follows this pattern):
+* Step 2. run example (each one follows this pattern):
 
 <pre>
 $ cd ~/exampleA/v1_java
