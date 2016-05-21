@@ -9,9 +9,15 @@ import java.util.*;
 
 public class AccountDao {
     private final String DB = Constants.DB;
+    
+    private static boolean isDatabaseCreated = false;
 
-    public void initialize() {
-        new DatabaseUtils().createDatabase();
+    public AccountDao() {
+        // This example uses in-memory HSQL so we need to create DB and populate data.
+        if (! isDatabaseCreated) {
+            new DatabaseUtils().createDatabase();
+            isDatabaseCreated = true;
+        }
     }
 
     @SuppressWarnings("unchecked")
