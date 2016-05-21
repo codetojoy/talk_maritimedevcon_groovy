@@ -1,0 +1,51 @@
+
+def dataDir = "${projectDir}/data"
+
+def random = new Random()
+
+def oneInNChance = { n ->
+    int pick = random.nextInt(n)
+    return (pick == 0)
+}
+
+def makeLine = { fileIndex, lineIndex ->
+    def line = "[INFO] :: vanilla log"
+    def n = 100 
+    if (oneInNChance(n)) {
+        def accountId = "" + fileIndex + "00" + lineIndex
+        def errorCode = random.nextInt(10)
+        def errorStr = String.format("%04d", errorCode)
+        line = "[ERROR] :: code ${errorStr} for account id: ${accountId}"
+    }
+
+    return line
+}
+
+def makeFiles = { monthDir ->
+   def numFiles = 50
+
+   50.times { fileIndex ->
+        def path = "${monthDir}/example_${fileIndex}.log" 
+        def file = new File(path)
+        file.withWriter { def writer ->
+            10.times { lineIndex ->
+                def line = makeLine(fileIndex, lineIndex) 
+                writer.write(line + "\n")
+            }
+        }
+   }
+}
+
+task makeData << {
+    def months = ["01", "02", "03", "04", "05"]
+    months.each { def month ->
+        def monthDir = "${dataDir}/2016/${month}"
+        ant.mkdir(dir: monthDir)
+        makeFiles(monthDir)
+    }
+}
+
+task cleanData << {
+    ant.delete(dir: dataDir)
+}
+
