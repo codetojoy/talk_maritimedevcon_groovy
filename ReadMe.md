@@ -5,8 +5,8 @@
     * see http://www.groovy-lang.org/
     * Installation is standard:
         * unzip 
-        * define GRADLE_HOME env var
-        * add GRADLE_HOME/bin to PATH
+        * define GROOVY_HOME env var
+        * add GROOVY_HOME/bin to PATH
 
 * Some examples require Gradle:
     * see http://gradle.org 
