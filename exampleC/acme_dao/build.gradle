@@ -1,0 +1,42 @@
+
+apply plugin: 'java'
+
+def DIST_DIR="${projectDir}/dist"
+def ACME_DAO_JAR="acme-flagship-dao-1.0.jar"
+
+configurations {
+    releaseJars
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile  'org.hibernate:hibernate-core:4.3.6.Final'
+    compile 'org.slf4j:slf4j-simple:1.7.7'
+
+    releaseJars 'org.hibernate:hibernate-core:4.3.6.Final'
+    releaseJars 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
+    releaseJars 'org.slf4j:slf4j-simple:1.7.7'
+    releaseJars 'org.javassist:javassist:3.15.0-GA'
+}
+
+task init {
+    ant.delete(dir: DIST_DIR)
+    ant.mkdir(dir: DIST_DIR)
+}
+
+task copyReleaseJars(type: Copy, dependsOn: 'init') {
+    into DIST_DIR
+    from configurations.releaseJars
+}
+
+jar.archiveName ACME_DAO_JAR
+
+task doBuild(dependsOn: ['copyReleaseJars', 'jar']) << {
+    ant.copy(file: "${buildDir}/libs/${ACME_DAO_JAR}", todir: DIST_DIR)
+
+    println "\n\n**** ${ACME_DAO_JAR} written to ${DIST_DIR} with its dependencies"
+}
+
