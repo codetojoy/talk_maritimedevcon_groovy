@@ -1,4 +1,6 @@
 
+defaultTasks 'doBuild'
+
 def dataDir = "${projectDir}/data"
 
 def random = new Random()
@@ -36,7 +38,7 @@ def makeFiles = { monthDir ->
    }
 }
 
-task makeData << {
+task makeData(description: "create many log files in ${dataDir}") << {
     def months = ["01", "02", "03", "04", "05"]
     months.each { def month ->
         def monthDir = "${dataDir}/2016/${month}"
@@ -45,7 +47,7 @@ task makeData << {
     }
 }
 
-task cleanData << {
+task cleanData(description: "delete test log files in ${dataDir}") << {
     ant.delete(dir: dataDir)
 }
 
