@@ -20,7 +20,7 @@ task init {
     ant.mkdir(dir: LIB_DIR)
 }
 
-task getDependencies(type: Copy, dependsOn: 'init') {
+task getDependencies(type: Copy, dependsOn: 'init', description: "fetch 3rd-party jars and dependencies") {
     into LIB_DIR
     from configurations.releaseJars
 }
