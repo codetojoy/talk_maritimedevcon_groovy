@@ -1,0 +1,26 @@
+
+defaultTasks 'getDependencies'
+
+configurations {
+    releaseJars
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    releaseJars 'org.apache.httpcomponents:httpclient:4.5.2'
+    releaseJars 'org.apache.httpcomponents:httpcore:4.4.4'
+}
+
+def LIB_DIR="${projectDir}/lib"
+
+task init {
+    ant.mkdir(dir: LIB_DIR)
+}
+
+task getDependencies(type: Copy, dependsOn: 'init') {
+    into LIB_DIR
+    from configurations.releaseJars
+}

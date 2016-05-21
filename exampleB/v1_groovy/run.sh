@@ -1,4 +1,5 @@
 
+gradle getDependencies 
 
 COMPILE_CLASSPATH=.
 COMPILE_CLASSPATH=./lib/httpcore-4.4.4.jar:$COMPILE_CLASSPATH
