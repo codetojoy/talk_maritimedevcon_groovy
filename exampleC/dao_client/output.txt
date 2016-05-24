@@ -5,6 +5,8 @@ Connected database successfully...
 Creating table ...
 Created table.
 Populated seed rows.
-cancelled accounts :
-account id: 120 username: Chopin
-account id: 190 username: Stravinsky
+
+active accounts :
+account id: 100 username: James_Bond
+account id: 190 username: Jaime_Sommers
+account id: 200 username: Blanche_White
