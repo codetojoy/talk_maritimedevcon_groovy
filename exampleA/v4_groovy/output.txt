@@ -1,0 +1,10 @@
+compiling ...
+running ...
+for code 0005 , account ids: [4009, 28006, 31009, 20003, 11001]
+for code 0001 , account ids: [5001, 26007, 22006]
+for code 0007 , account ids: [18009, 1001]
+for code 0000 , account ids: [27008, 5001]
+for code 0008 , account ids: [31006, 35005, 46007, 28004]
+for code 0006 , account ids: [37003, 43008]
+for code 0002 , account ids: [45007, 35002]
+for code 0009 , account ids: [47005, 30001, 39008]
