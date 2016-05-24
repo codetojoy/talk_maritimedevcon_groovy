@@ -9,9 +9,9 @@ def writer = new StringWriter()
 def builder = new MarkupBuilder(writer)
 
 builder.accounts() {
-    cancelled() {
+    active() {
         dao.findAccountsByStatus(Account.ACTIVE).each { acc ->
-            account(id: "${acc.accountId}", user: "${acc.username}")
+            account(id: "${acc.accountId}", username: "${acc.username}")
         }
     }
 } 
