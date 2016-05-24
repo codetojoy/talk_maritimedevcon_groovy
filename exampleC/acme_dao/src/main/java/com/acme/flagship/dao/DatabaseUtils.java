@@ -30,12 +30,12 @@ public class DatabaseUtils {
             // and so we populate some rows here as a convenience.
             // (Normally, this would be absurd.)
 
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (100,'Beethoven','active');" );
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (120,'Chopin','cancel');" );
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (130,'Liszt','block');" );
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (170,'Mozart','active');" );
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (190,'Stravinsky','cancel');" );
-            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (200,'Vivaldi','active');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (100,'James_Bond','active');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (120,'Jason_Bourne','cancel');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (130,'Emily_Pollifax','cancel');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (170,'Maxwell_Smart','block');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (190,'Jaime_Sommers','active');" );
+            statement.execute( "INSERT INTO account (account_id, username, status) VALUES (200,'Blanche_White','active');" );
 
             System.out.println("Populated seed rows.");
 
