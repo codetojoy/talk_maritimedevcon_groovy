@@ -21,9 +21,12 @@ status VARCHAR(256)
 
 def accountInsert = " INSERT INTO account (account_id, username, status) VALUES (?,?,?); "
 
-sql.execute accountInsert, [1, 'Mozart',    'active']
-sql.execute accountInsert, [2, 'Beethoven', 'active']
-sql.execute accountInsert, [3, 'Chopin',    'cancel']
+sql.execute accountInsert, [100, 'James_Bond',     'active']
+sql.execute accountInsert, [120, 'Jason_Bourne',   'cancel']
+sql.execute accountInsert, [130, 'Emily_Pollifax', 'cancel']
+sql.execute accountInsert, [170, 'Maxwell_Smart',  'block']
+sql.execute accountInsert, [190, 'Jaime_Sommers',  'active']
+sql.execute accountInsert, [200, 'Blanche_White',  'active']
 
 sql.eachRow("SELECT account_id, username, status FROM account") { row ->
     println "account_id: ${row.account_id} username: ${row.username} status: ${row.status}"
