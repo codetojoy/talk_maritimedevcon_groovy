@@ -1,7 +1,7 @@
 
 import com.acme.flagship.dao.*
 
-def status = request.getParameter('status').toLowerCase()
+def status = request.getParameter('status')
 
 def dao = new AccountDao()
 
