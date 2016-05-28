@@ -1,6 +1,10 @@
 
 ### Groovy examples
 
+* Example A : Log Files
+* Example B : REST client
+* Example C : Acme Dao / persistence
+
 * These examples require Groovy:
     * see http://www.groovy-lang.org/
     * Installation is standard:
