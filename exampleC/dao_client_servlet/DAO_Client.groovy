@@ -14,7 +14,7 @@ html.html {
     
     ul {
         dao.findAccountsByStatus(status).each { account ->
-            p("Username : ${account.username} , Account Id : ${account.accountId}")
+            li("Username : ${account.username} , Account Id : ${account.accountId}")
         }
     }
   }
