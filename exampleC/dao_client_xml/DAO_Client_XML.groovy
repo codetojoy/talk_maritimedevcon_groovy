@@ -11,7 +11,7 @@ def builder = new MarkupBuilder(writer)
 builder.accounts() {
     active() {
         dao.findAccountsByStatus(Account.ACTIVE).each { acc ->
-            account(id: "${acc.accountId}", username: "${acc.username}")
+            account(id: acc.getAccountId(), username: acc.getUsername())
         }
     }
 } 
