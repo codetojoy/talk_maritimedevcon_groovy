@@ -56,3 +56,10 @@ $ ./run.sh
 * then browse to `http://0.0.0.0:5150/DAO_Client.groovy?status=active`
 * other status values include *block* and *cancel*
 
+### To use Acme DAO jar with the meta-programming client:
+
+<pre>
+$ cd dao_client_meta
+$ ./run.sh 
+</pre>
+
