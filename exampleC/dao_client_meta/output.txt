@@ -5,5 +5,7 @@ Connected database successfully...
 Creating table ...
 Created table.
 Populated seed rows.
-
-elapsed: 652 ms
+elapsed    : 670 ms
+account id: 100 username: James_Bond
+account id: 190 username: Jaime_Sommers
+account id: 200 username: Blanche_White

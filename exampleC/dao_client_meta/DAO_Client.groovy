@@ -3,19 +3,34 @@ import com.acme.flagship.dao.*
 
 import java.util.concurrent.TimeUnit
 
-AccountDao.metaClass.timedFindAccountsByStatus = { status ->
+def timedOperation = { timeUnit, f, x -> 
+    def pair = [:]
+
     long before = System.nanoTime()
     
-    def accounts = delegate.findAccountsByStatus(status)
+    def results = f(x)
 
     long after = System.nanoTime()
 
-    println "elapsed: " + TimeUnit.MILLISECONDS.convert((after - before), TimeUnit.NANOSECONDS) + " ms"
+    pair['results'] = results
+    pair['elapsed'] = timeUnit.convert((after - before), TimeUnit.NANOSECONDS)
+
+    return pair
+}
+
+AccountDao.metaClass.timedFindAccountsByStatus = { status ->
+    return timedOperation(TimeUnit.MILLISECONDS, delegate.&findAccountsByStatus, status)
 }
 
 // ----- main
 
-def dao = new AccountDao()
+AccountDao dao = new AccountDao()
 
-dao.timedFindAccountsByStatus(Account.ACTIVE)
+Map pair = dao.timedFindAccountsByStatus(Account.ACTIVE)
+
+System.out.println "elapsed    : " + pair['elapsed'] + " ms" 
+
+pair['results'].each { acc ->
+    System.out.println "account id: " + acc.getAccountId() + " username: " + acc.getUsername()
+}
  
