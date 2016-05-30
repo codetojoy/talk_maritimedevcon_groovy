@@ -24,15 +24,23 @@ AccountDao.metaClass.timedFindAccountsByStatus = { status ->
     return timedOperationInMillis(delegate.&findAccountsByStatus, status)
 }
 
+
+
+
+
+
 // ----- main
 
 AccountDao dao = new AccountDao()
 
 Map pair = dao.timedFindAccountsByStatus(Account.ACTIVE)
 
-System.out.println "elapsed    : " + pair['elapsed'] + " ms" 
+long elapsed = pair['elapsed']
+List accounts = pair['results']
 
-pair['results'].each { acc ->
+System.out.println("elapsed    : ${elapsed} ms")
+
+accounts.each { acc ->
     System.out.println "account id: " + acc.getAccountId() + " username: " + acc.getUsername()
 }
  
