@@ -18,8 +18,10 @@ def timedOperation = { timeUnit, f, x ->
     return pair
 }
 
+def timedOperationInMillis = timedOperation.curry(TimeUnit.MILLISECONDS)
+
 AccountDao.metaClass.timedFindAccountsByStatus = { status ->
-    return timedOperation(TimeUnit.MILLISECONDS, delegate.&findAccountsByStatus, status)
+    return timedOperationInMillis(delegate.&findAccountsByStatus, status)
 }
 
 // ----- main
