@@ -24,22 +24,25 @@
 * [Jenkins logo](http://en.wikipedia.org/wiki/Jenkins_(software)#/media/File:Jenkins_logo_with_title.svg) via [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0)
 * [High Bridge Ribbon Cutting](http://bit.ly/1Wu8ApI) by [Virginia State Parks](https://www.flickr.com/photos/vastateparksstaff/) via [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 * [Groovy in Action, 2nd ed](https://www.manning.com/books/groovy-in-action-second-edition) by Dierk König, Paul King, Guillaume Laforge, Hamlet D'Arcy, Cédric Champeau, Erik Pragt, and Jon Skeet via nominative use
-* [barcode](http://bit.ly/1U8FkyI) by [Manuel](https://www.flickr.com/photos/meathan/) via CC BY 2.0
-* [thank you note for every language](http://bit.ly/1CN8oCz) by [woodleywonderworks]() via CC BY 2.0
+* [barcode](http://bit.ly/1U8FkyI) by [Manuel](https://www.flickr.com/photos/meathan/) via [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) 
+* [thank you note for every language](http://bit.ly/1CN8oCz) by [woodleywonderworks]() via [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) 
 
 ### Derived Works
 
-* "Paradox" by [Michael Easter](http://twitter.com/codetojoy) 
+#### "Paradox" by [Michael Easter](http://twitter.com/codetojoy) 
+
 * derived from [Perth Impossible Triangle](https://commons.wikimedia.org/wiki/File:Perth_Impossible_Triangle.jpg) by [Bjørn Christian Tørrissen](ihttps://commons.wikimedia.org/wiki/User:Uspn) licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 * derived work licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
 
-* "Owls With Cat In Spy Hat" by [Michael Easter](http://twitter.com/codetojoy) 
+#### "Owls With Cat In Spy Hat" by [Michael Easter](http://twitter.com/codetojoy) 
+
 * derived from [Five southern burrowing owls](http://bit.ly/1X33Dow) by [travelwayoflife](https://www.flickr.com/people/61664791@N05) licensed under [CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0/)
 * derived from [Mackerel tabby, with the striped pattern](http://bit.ly/1LOz2Wj) by [Alvesgaspar](https://commons.wikimedia.org/wiki/User:Alvesgaspar) licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 * derived from [black fedora](https://pixabay.com/en/hat-black-fedora-stylish-headgear-311702/) via [CC0 Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
 * derived work licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 
-* "Owls With Cat" by [Michael Easter](http://twitter.com/codetojoy) 
+#### "Owls With Cat" by [Michael Easter](http://twitter.com/codetojoy) 
+
 * derived from [Five southern burrowing owls](http://bit.ly/1X33Dow) by [travelwayoflife](https://www.flickr.com/people/61664791@N05) licensed under [CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0/)
 * derived from [Mackerel tabby, with the striped pattern](http://bit.ly/1LOz2Wj) by [Alvesgaspar](https://commons.wikimedia.org/wiki/User:Alvesgaspar) licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
 * derived work licensed under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
