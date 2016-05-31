@@ -1,21 +1,23 @@
 
 import com.acme.flagship.dao.*
 
+import groovy.transform.Immutable
 import java.util.concurrent.TimeUnit
 
-def timedOperation = { timeUnit, f, x -> 
-    def pair = [:]
+@Immutable
+class Pair {
+    List results
+    long elapsed
+}
 
+def timedOperation = { timeUnit, f, x -> 
     long before = System.nanoTime()
     
-    def results = f(x)
+    def y = f(x)
 
-    long elapsed = System.nanoTime() - before
+    long duration = timeUnit.convert(System.nanoTime() - before, TimeUnit.NANOSECONDS)
 
-    pair['results'] = results
-    pair['elapsed'] = timeUnit.convert(elapsed, TimeUnit.NANOSECONDS)
-
-    return pair
+    return new Pair(results: y, elapsed: duration)
 }
 
 def timedOperationInMillis = timedOperation.curry(TimeUnit.MILLISECONDS)
@@ -35,14 +37,11 @@ AccountDao.metaClass.timedFindAccountsByStatus = { status ->
 
 AccountDao dao = new AccountDao()
 
-Map pair = dao.timedFindAccountsByStatus(Account.ACTIVE)
+Pair pair = dao.timedFindAccountsByStatus(Account.ACTIVE)
 
-long elapsed = pair['elapsed']
-List accounts = pair['results']
+System.out.println("elapsed    : ${pair.elapsed} ms")
 
-System.out.println("elapsed    : ${elapsed} ms")
-
-accounts.each { acc ->
+pair.results.each { acc ->
     System.out.println "account id: " + acc.getAccountId() + " username: " + acc.getUsername()
 }
  
