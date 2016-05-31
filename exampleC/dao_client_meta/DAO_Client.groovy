@@ -10,15 +10,17 @@ def timedOperation = { timeUnit, f, x ->
     
     def results = f(x)
 
-    long after = System.nanoTime()
+    long elapsed = System.nanoTime() - before
 
     pair['results'] = results
-    pair['elapsed'] = timeUnit.convert((after - before), TimeUnit.NANOSECONDS)
+    pair['elapsed'] = timeUnit.convert(elapsed, TimeUnit.NANOSECONDS)
 
     return pair
 }
 
 def timedOperationInMillis = timedOperation.curry(TimeUnit.MILLISECONDS)
+
+
 
 AccountDao.metaClass.timedFindAccountsByStatus = { status ->
     return timedOperationInMillis(delegate.&findAccountsByStatus, status)
