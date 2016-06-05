@@ -14,6 +14,8 @@
     * dao_client_servlet : use a Groovy script as a servlet 
     * dao_client_meta : use meta-programming to add method to `AccountDao`
 
+* **Post-Talk** Example D House example from [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE) by Sandi Metz
+
 * These examples require Groovy:
     * see http://www.groovy-lang.org/
     * Installation is standard:
