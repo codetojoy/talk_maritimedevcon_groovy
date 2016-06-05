@@ -5,6 +5,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import java.util.*;
 
+import static java.util.stream.Collectors.toList;
+import static java.util.Comparator.comparing;
+
+import java.util.function.*;
+
 // see src/main/resources/META-INF/persistence.xml for config
 
 public class AccountDao {
@@ -43,5 +48,21 @@ public class AccountDao {
         entityManager.close();
 
         return account;
+    }
+
+    /*
+     * This method is intended to illustrate Java 8 features. It accepts a list of Accounts and
+     * returns N account usernames, where accounts have the specified status. The results are
+     * sorted by account id (descending order).
+     *
+     * This probably doesn't belong in a DAO object, but it is just an illustration.
+     */
+    public List<String> getAccountUsernamesByStatus(List<Account> accounts, String status, int numAccounts) {
+        return accounts.stream()
+                      .filter(acc -> acc.getStatus().equals(status))
+                      .sorted(comparing(Account::getAccountId).reversed())
+                      .map(Account::getUsername)
+                      .limit(numAccounts)
+                      .collect(toList());
     }
 }
