@@ -15,7 +15,7 @@
     * I hope to illustrate this with an example using the Acme-Dao jar, but that will take some time.
 
 * **Question:** (*asked post-session*) In [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE), Sandi Metz illustrates the power of object composition using `House`, `RandomHouse`, and `EchoHouse`. Can this be achieved in Groovy?
-    * Yes, see Example D [here](https://github.com/codetojoy/talk_maritimedevcon_groovy)
+    * Yes, see Example D [here](https://github.com/codetojoy/talk_maritimedevcon_groovy). The code is written in full-on, idiomatic Groovy and looks *a lot* like the Ruby code in the video. The tests pass!
 
 * **Question:** (*asked post-session*) Can you illustrate using a Groovlet from Jenkins?
     * Coming soon.
