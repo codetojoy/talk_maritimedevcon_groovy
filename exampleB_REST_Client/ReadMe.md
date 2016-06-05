@@ -6,6 +6,6 @@
 * Step 1. run sample (each one follows this pattern):
 
 <pre>
-$ cd ~/exampleB/v1_groovy
+$ cd ~/exampleB_REST_Client/v1_groovy
 $ ./run.sh
 </pre>
