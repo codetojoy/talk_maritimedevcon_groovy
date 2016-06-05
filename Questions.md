@@ -11,7 +11,7 @@
     * Yes. [Here is a list](http://groovy-lang.org/differences.html). e.g. Groovy redefines `==`. In practice, there are rarely any problems.
 
 * **Question:** Can we use [Grape](http://docs.groovy-lang.org/latest/html/documentation/grape.html) with a repository that is not Maven Central?
-    * Yes, see [Section 1.2](http://docs.groovy-lang.org/latest/html/documentation/grape.html)
+    * Yes, see [Section 1.2](http://docs.groovy-lang.org/latest/html/documentation/grape.html) and `@GrabResolver`
     * I hope to illustrate this with an example using the Acme-Dao jar, but that will take some time.
 
 * **Question:** (*asked post-session*) In [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE), Sandi Metz illustrates the power of object composition using `House`, `RandomHouse`, and `EchoHouse`. Can this be achieved in Groovy?
