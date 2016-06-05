@@ -14,3 +14,9 @@
     * Yes, see [Section 1.2](http://docs.groovy-lang.org/latest/html/documentation/grape.html)
     * I hope to illustrate this with an example using the Acme-Dao jar, but that will take some time.
 
+* **Q:** *after session* In [Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE), Sandi Metz illustrates the power of object composition using `House`, `RandomHouse`, and `EchoHouse`. Can this be achieved in Groovy?
+    * Sure. Coming soon
+
+* **Q:** Can you illustrate using a Groovlet from Jenkins?
+    * Coming soon.
+
