@@ -6,6 +6,13 @@
 * Example B REST client
 
 * Example C Acme Dao / persistence
+    * sql_client : does not use Acme-Dao jar, uses JDBC
+    * dao_client : simple usage of Acme-Dao jar
+    * **Post-Talk** dao_client_using_java8 : simple usage of Java 8 method in Acme-Dao jar
+    * **Post-Talk** dao_client_with_streams : comparison of Java 8 syntax vs Groovy syntax re: streams
+    * dao_client_xml : generate XML with MarkupBuilder
+    * dao_client_servlet : use a Groovy script as a servlet 
+    * dao_client_meta : use meta-programming to add method to `AccountDao`
 
 * These examples require Groovy:
     * see http://www.groovy-lang.org/
