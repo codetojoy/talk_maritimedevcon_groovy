@@ -44,6 +44,20 @@ $ cd dao_client_xml
 $ ./run.sh 
 </pre>
 
+### To use a Java 8 method contained in the Acme DAO jar:
+
+<pre>
+$ cd dao_client_with_java8
+$ ./run.sh 
+</pre>
+
+### To use Java 8 streams in Groovy:
+
+<pre>
+$ cd dao_client_using_streams
+$ ./run.sh 
+</pre>
+
 ### To use Acme DAO jar with the web client:
 
 * start the web server with this:
