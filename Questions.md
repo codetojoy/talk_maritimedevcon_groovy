@@ -1,5 +1,5 @@
 
-### Questions from *Covert Ops: Transform Your Java Team (From The Inside!) With Groovy* (slides [here](http://codetojoy.github.io/talk_maritimedevcon_groovy/assets/player/KeynoteDHTMLPlayer.html#0)) at [Maritime Dev Con 2016](http://maritimedevcon.ca/) 
+#### Questions from *Covert Ops: Transform Your Java Team (From The Inside!) With Groovy* (slides [here](http://codetojoy.github.io/talk_maritimedevcon_groovy/assets/player/KeynoteDHTMLPlayer.html#0)) at [Maritime Dev Con 2016](http://maritimedevcon.ca/) 
 
 * **Question:** If the Acme-Dao jar uses Java 8 features, can we still use it with Groovy?
     * Yes, with [Groovy 2.3](http://groovy-lang.org/releasenotes/groovy-2.3.html) or higher. In [Example_C_Acme_Dao](http://bit.ly/25FKJoO), there is a new method, `getAccountUsernamesByStatus()` in [AccountDao](http://bit.ly/1ZphhzN). It uses Java 8 extensively and is illustrated [here](http://bit.ly/1PxmGV4).
