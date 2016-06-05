@@ -10,7 +10,7 @@
 * **Q:** Aside from Java 8 lambdas and method references, are there other syntax differences between Groovy and Java?
     * Yes [here is a list](http://groovy-lang.org/differences.html). e.g. Groovy redefines `==`. In practice, there are rarely any problems.
 
-* **Q:** Can we use [Grapes] with a repository that is not Maven Central?
+* **Q:** Can we use [Grape](http://docs.groovy-lang.org/latest/html/documentation/grape.html) with a repository that is not Maven Central?
     * Yes, see [Section 1.2](http://docs.groovy-lang.org/latest/html/documentation/grape.html)
     * I hope to illustrate this with an example using the Acme-Dao jar, but that will take some time.
 
