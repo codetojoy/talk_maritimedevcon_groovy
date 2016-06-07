@@ -6,9 +6,11 @@
 * Step 1. run the tests
 
 <pre>
-$ cd ~/exampleD_House
+$ cd ~/standard
 $ gradle clean test
 </pre>
 
 * Step 2. Check out the test and main code to see the principles at work
+
+* `standard` is a straight-forward port from the video; `alternate` uses a new Idempotent object that provides `f(x) = x` for all x *and all f*.
 
