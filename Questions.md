@@ -20,3 +20,6 @@
 * **Question:** (*asked post-session*) Can you illustrate using a Groovlet from Jenkins?
     * Coming soon.
 
+* **Question:** (*asked post-session*) Can you illustrate using a Groovlet in Tomcat?
+    * Yes, see `dao_client_groovlet_war` in Example C [here](https://github.com/codetojoy/talk_maritimedevcon_groovy) 
+
