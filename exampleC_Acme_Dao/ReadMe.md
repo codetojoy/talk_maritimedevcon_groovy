@@ -77,3 +77,17 @@ $ cd dao_client_meta
 $ ./run.sh 
 </pre>
 
+### To use a Groovlet in a WAR file with Tomcat:
+
+* install Tomcat
+* build the jar in the `acme_dao` project
+* then:
+
+<pre>
+$ cd dao_client_groovlet_war
+$ gradle war  
+</pre>
+
+* the war file will be here: `dao_client_groovlet_war/build/libs/acme_dao_groovlet.war`
+* deploy to Tomcat. An example URL is `http://localhost:5150/acme_dao_groovlet/dao_client.groovy`
+

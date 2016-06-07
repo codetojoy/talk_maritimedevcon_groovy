@@ -1,0 +1,23 @@
+
+defaultTasks 'war'
+
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    runtime fileTree(dir: "../acme_dao/dist", include: "acme-flagship-dao-1.0.jar")
+    runtime 'org.hibernate:hibernate-core:4.3.6.Final'
+    runtime 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
+    runtime 'org.slf4j:slf4j-simple:1.7.7'
+    runtime 'org.javassist:javassist:3.15.0-GA'
+    runtime 'org.hsqldb:hsqldb:2.3.4'
+    runtime 'org.codehaus.groovy:groovy-all:2.4.7'
+}
+
+war {
+    archiveName "acme_dao_groovlet.war"
+}
+
