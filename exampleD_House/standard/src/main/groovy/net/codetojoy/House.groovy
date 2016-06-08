@@ -11,7 +11,7 @@ class House {
     }
 
     def parts(number) {
-        formatter.format(data.drop(data.size() - number))
+        formatter.format(data.takeRight(number))
     }
 
     static final def DATA = [
